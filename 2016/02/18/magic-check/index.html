@@ -17,7 +17,7 @@
 先看看纯CSS美化过后的radio和checkbox效果：查看。
 项目地址：magic-check
 在CSS出现之前，我们美化radio和checkbox需要借助JavaScript，最具代表性的就是icheck，它功能强大复杂并且主题很多。icheck这种美化方案很好很强大，但是">
-<meta property="og:updated_time" content="2016-02-22T08:56:30.000Z">
+<meta property="og:updated_time" content="2016-02-23T02:44:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用纯CSS美化radio和checkbox">
 <meta name="twitter:description" content="Radio和checkbox需要美化吗？答案是必须的，因为设计风格一直都会变化，原生的样式百年不变肯定满足不了需求。
@@ -91,9 +91,7 @@
 <p>所以，如果的项目不需兼容古董浏览器的话，用CSS美化radio和checkbox是最好的选择，这样什么都不用依赖，只需CSS，无JS，无图片，无字体图标。</p>
 <p>为了更好的在项目中重用，我把美化的代码写成一个项目，叫<a href="https://github.com/forsigner/magic-check" target="_blank" rel="external">magic-check</a>，寓意像魔法一样去美化radio和checkbox。</p>
 <p>用法非常简单，最好用Bower和npm进行管理，先Install：</p>
-<ul>
-<li>bower: <figure class="highlight"><figcaption><span>install --save magic-check```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- npm:&#160; ```npm install --save magic-check</span><br></pre></td></tr></table></figure></li>
-</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bower:</span></span><br><span class="line">$ bower install --save magic-check</span><br><span class="line"></span><br><span class="line"><span class="comment"># npm:</span></span><br><span class="line">$ npm install --save magic-check</span><br></pre></td></tr></table></figure>
 <p>然后加载CSS文件：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"bower_components/magic-check/css/magic-check.css"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>然后，只要给input元素加上一个CSS类magic-checkbox或magic-radio就可以：</p>
