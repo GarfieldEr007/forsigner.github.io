@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="forsigner的博客">
 <meta property="og:description" content="从开始学习JavaScript时，就听说闭包是个强大的东西，但也是一个很复杂很难懂的东西。一直以来也对闭包似懂非懂，
 直到最近在读汤姆大叔的深入理解JavaScript系列 才基本弄懂什么是闭包，这里感学大叔无私的分享，这种无私的分享精神非常值得学习。下面关于我对闭包的描述大多数也是从大叔那看来。">
-<meta property="og:updated_time" content="2015-08-03T14:15:30.000Z">
+<meta property="og:updated_time" content="2016-02-24T09:40:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript闭包">
 <meta name="twitter:description" content="从开始学习JavaScript时，就听说闭包是个强大的东西，但也是一个很复杂很难懂的东西。一直以来也对闭包似懂非懂，
@@ -65,6 +65,10 @@
     <span class="article-author">forsigner</span>
 
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+  </div>
+
 
   </div>
   <div class="article-inner">
@@ -89,7 +93,7 @@
 <p>例子四（创建封装的作用域来隐藏辅助对象）：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = &#123;&#125;;</span><br><span class="line"><span class="comment">// 初始化</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params">object</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> x = <span class="number">10</span>;</span><br><span class="line">    object.getX = <span class="function"><span class="keyword">function</span> <span class="title">_getX</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;)(foo);</span><br><span class="line">alert(foo.getX()); <span class="comment">// 获得闭包 "x" – 10</span></span><br></pre></td></tr></table></figure>
 <p>例子五（延时调用）：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(a); <span class="comment">// 10, after one second </span></span><br><span class="line">&#125;,  <span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(a); <span class="comment">// 10, after one second</span></span><br><span class="line">&#125;,  <span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
 <p>例子六(回调函数)：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">10</span>;</span><br><span class="line"><span class="comment">// only for example</span></span><br><span class="line">xmlHttpRequestObject.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 当数据就绪的时候，才会调用;</span></span><br><span class="line">    <span class="comment">// 这里，不论是在哪个上下文中创建</span></span><br><span class="line">    <span class="comment">// 此时变量“x”的值已经存在了</span></span><br><span class="line">    alert(x); <span class="comment">// 10</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>这里没深入讨论闭包的理论，有兴趣的同学建议去看看大叔的博客和他的的深入理解JavaScript系列。</p>
