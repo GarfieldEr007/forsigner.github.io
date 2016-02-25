@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.forsigner.com/"/>
-  <updated>2016-02-24T09:39:03.000Z</updated>
+  <updated>2016-02-25T01:08:14.000Z</updated>
   <id>http://www.forsigner.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>一个极简主义设计的 Hexo 主题</title>
-    <link href="http://www.forsigner.com/2016/02/23/fexo/"/>
-    <id>http://www.forsigner.com/2016/02/23/fexo/</id>
+    <link href="http://www.forsigner.com/fexo/"/>
+    <id>http://www.forsigner.com/fexo/</id>
     <published>2016-02-22T16:00:00.000Z</published>
-    <updated>2016-02-24T09:39:03.000Z</updated>
+    <updated>2016-02-25T01:08:14.000Z</updated>
     
     <content type="html">&lt;p&gt;作为设计师出身的前端攻城狮， blog 用着别人的主题终究还是不爽，于是花了两天晚上写了一个 Hexo 主题。&lt;/p&gt;
 &lt;p&gt;主题 Github 地址：&lt;a href=&quot;https://github.com/forsigner/fexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Fexo&lt;/a&gt; - A minimalist design theme.&lt;/p&gt;
@@ -58,14 +58,16 @@
       <category term="设计" scheme="http://www.forsigner.com/categories/%E8%AE%BE%E8%AE%A1/"/>
     
     
+      <category term="Hexo" scheme="http://www.forsigner.com/tags/Hexo/"/>
+    
       <category term="JavaScript" scheme="http://www.forsigner.com/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>用纯CSS美化radio和checkbox</title>
-    <link href="http://www.forsigner.com/2016/02/18/magic-check/"/>
-    <id>http://www.forsigner.com/2016/02/18/magic-check/</id>
+    <link href="http://www.forsigner.com/magic-check/"/>
+    <id>http://www.forsigner.com/magic-check/</id>
     <published>2016-02-17T16:00:00.000Z</published>
     <updated>2016-02-24T09:44:27.000Z</updated>
     
@@ -109,8 +111,8 @@
   
   <entry>
     <title>不可错过的Angular scrollbar library</title>
-    <link href="http://www.forsigner.com/2016/02/17/angular-nice-bar/"/>
-    <id>http://www.forsigner.com/2016/02/17/angular-nice-bar/</id>
+    <link href="http://www.forsigner.com/angular-nice-bar/"/>
+    <id>http://www.forsigner.com/angular-nice-bar/</id>
     <published>2016-02-16T16:00:00.000Z</published>
     <updated>2016-02-24T09:38:39.000Z</updated>
     
@@ -150,8 +152,8 @@
   
   <entry>
     <title>用JavaScript修复ipa处理过的的png图片</title>
-    <link href="http://www.forsigner.com/2016/02/16/node-pngdefry/"/>
-    <id>http://www.forsigner.com/2016/02/16/node-pngdefry/</id>
+    <link href="http://www.forsigner.com/node-pngdefry/"/>
+    <id>http://www.forsigner.com/node-pngdefry/</id>
     <published>2016-02-15T16:00:00.000Z</published>
     <updated>2016-02-24T09:46:05.000Z</updated>
     
@@ -193,8 +195,8 @@
   
   <entry>
     <title>MongoDB Shell Command</title>
-    <link href="http://www.forsigner.com/2015/07/01/MongoDB-Command/"/>
-    <id>http://www.forsigner.com/2015/07/01/MongoDB-Command/</id>
+    <link href="http://www.forsigner.com/MongoDB-Command/"/>
+    <id>http://www.forsigner.com/MongoDB-Command/</id>
     <published>2015-07-01T14:10:10.000Z</published>
     <updated>2016-02-24T09:45:00.000Z</updated>
     
@@ -224,8 +226,8 @@
   
   <entry>
     <title>ionic android打包</title>
-    <link href="http://www.forsigner.com/2015/03/12/ionic-android-package/"/>
-    <id>http://www.forsigner.com/2015/03/12/ionic-android-package/</id>
+    <link href="http://www.forsigner.com/ionic-android-package/"/>
+    <id>http://www.forsigner.com/ionic-android-package/</id>
     <published>2015-03-11T16:00:00.000Z</published>
     <updated>2016-02-24T09:40:00.000Z</updated>
     
@@ -262,8 +264,8 @@
   
   <entry>
     <title>ionic Mac下连接android手机调试</title>
-    <link href="http://www.forsigner.com/2015/03/07/mac-android-debug/"/>
-    <id>http://www.forsigner.com/2015/03/07/mac-android-debug/</id>
+    <link href="http://www.forsigner.com/mac-android-debug/"/>
+    <id>http://www.forsigner.com/mac-android-debug/</id>
     <published>2015-03-06T16:00:00.000Z</published>
     <updated>2016-02-24T09:41:11.000Z</updated>
     
@@ -303,8 +305,8 @@
   
   <entry>
     <title>ionic常用命令</title>
-    <link href="http://www.forsigner.com/2015/03/01/ionic-command/"/>
-    <id>http://www.forsigner.com/2015/03/01/ionic-command/</id>
+    <link href="http://www.forsigner.com/ionic-command/"/>
+    <id>http://www.forsigner.com/ionic-command/</id>
     <published>2015-02-28T16:00:00.000Z</published>
     <updated>2016-02-24T09:40:07.000Z</updated>
     
@@ -327,8 +329,8 @@
   
   <entry>
     <title>Mac中配置ionic框架</title>
-    <link href="http://www.forsigner.com/2015/02/27/setting-ionic/"/>
-    <id>http://www.forsigner.com/2015/02/27/setting-ionic/</id>
+    <link href="http://www.forsigner.com/setting-ionic/"/>
+    <id>http://www.forsigner.com/setting-ionic/</id>
     <published>2015-02-26T16:00:00.000Z</published>
     <updated>2016-02-24T09:46:43.000Z</updated>
     
@@ -362,8 +364,8 @@
   
   <entry>
     <title>我的技术栈</title>
-    <link href="http://www.forsigner.com/2015/01/03/my-tech/"/>
-    <id>http://www.forsigner.com/2015/01/03/my-tech/</id>
+    <link href="http://www.forsigner.com/my-tech/"/>
+    <id>http://www.forsigner.com/my-tech/</id>
     <published>2015-01-02T16:00:00.000Z</published>
     <updated>2016-02-24T09:45:29.000Z</updated>
     
@@ -619,8 +621,8 @@
   
   <entry>
     <title>云南之行</title>
-    <link href="http://www.forsigner.com/2014/03/24/traval/"/>
-    <id>http://www.forsigner.com/2014/03/24/traval/</id>
+    <link href="http://www.forsigner.com/traval/"/>
+    <id>http://www.forsigner.com/traval/</id>
     <published>2014-03-23T16:00:00.000Z</published>
     <updated>2016-02-24T09:47:14.000Z</updated>
     
@@ -668,8 +670,8 @@
   
   <entry>
     <title>在Chrome下调试Sass</title>
-    <link href="http://www.forsigner.com/2013/12/06/sass-sourcemap/"/>
-    <id>http://www.forsigner.com/2013/12/06/sass-sourcemap/</id>
+    <link href="http://www.forsigner.com/sass-sourcemap/"/>
+    <id>http://www.forsigner.com/sass-sourcemap/</id>
     <published>2013-12-05T16:00:00.000Z</published>
     <updated>2016-02-24T09:46:34.000Z</updated>
     
@@ -710,8 +712,8 @@
   
   <entry>
     <title>JavaScript 编码风格指南</title>
-    <link href="http://www.forsigner.com/2013/09/01/javascript-style-guide/"/>
-    <id>http://www.forsigner.com/2013/09/01/javascript-style-guide/</id>
+    <link href="http://www.forsigner.com/javascript-style-guide/"/>
+    <id>http://www.forsigner.com/javascript-style-guide/</id>
     <published>2013-08-31T16:00:00.000Z</published>
     <updated>2016-02-24T09:40:48.000Z</updated>
     
@@ -897,8 +899,8 @@
   
   <entry>
     <title>一些Mac小技巧</title>
-    <link href="http://www.forsigner.com/2013/08/29/mac-skills/"/>
-    <id>http://www.forsigner.com/2013/08/29/mac-skills/</id>
+    <link href="http://www.forsigner.com/mac-skills/"/>
+    <id>http://www.forsigner.com/mac-skills/</id>
     <published>2013-08-28T16:00:00.000Z</published>
     <updated>2016-02-24T09:44:16.000Z</updated>
     
@@ -924,8 +926,8 @@
   
   <entry>
     <title>Unix 系统下常用命令</title>
-    <link href="http://www.forsigner.com/2013/08/23/Unix-command/"/>
-    <id>http://www.forsigner.com/2013/08/23/Unix-command/</id>
+    <link href="http://www.forsigner.com/Unix-command/"/>
+    <id>http://www.forsigner.com/Unix-command/</id>
     <published>2013-08-22T16:00:00.000Z</published>
     <updated>2016-02-24T09:47:34.000Z</updated>
     
@@ -953,8 +955,8 @@
   
   <entry>
     <title>常用git命令</title>
-    <link href="http://www.forsigner.com/2013/08/22/git-command/"/>
-    <id>http://www.forsigner.com/2013/08/22/git-command/</id>
+    <link href="http://www.forsigner.com/git-command/"/>
+    <id>http://www.forsigner.com/git-command/</id>
     <published>2013-08-21T16:00:00.000Z</published>
     <updated>2016-02-24T09:39:08.000Z</updated>
     
@@ -1000,8 +1002,8 @@
   
   <entry>
     <title>好用的CSS sprite工具-TexturePacker</title>
-    <link href="http://www.forsigner.com/2013/08/01/texturepacker-sprite/"/>
-    <id>http://www.forsigner.com/2013/08/01/texturepacker-sprite/</id>
+    <link href="http://www.forsigner.com/texturepacker-sprite/"/>
+    <id>http://www.forsigner.com/texturepacker-sprite/</id>
     <published>2013-07-31T16:00:00.000Z</published>
     <updated>2016-02-24T09:46:57.000Z</updated>
     
@@ -1082,8 +1084,8 @@
   
   <entry>
     <title>关于此博客</title>
-    <link href="http://www.forsigner.com/2013/07/28/about-blog/"/>
-    <id>http://www.forsigner.com/2013/07/28/about-blog/</id>
+    <link href="http://www.forsigner.com/about-blog/"/>
+    <id>http://www.forsigner.com/about-blog/</id>
     <published>2013-07-27T16:00:00.000Z</published>
     <updated>2016-02-24T09:36:22.000Z</updated>
     
@@ -1120,8 +1122,8 @@
   
   <entry>
     <title>关于inline-block最好的一篇文章</title>
-    <link href="http://www.forsigner.com/2013/03/28/inline-block/"/>
-    <id>http://www.forsigner.com/2013/03/28/inline-block/</id>
+    <link href="http://www.forsigner.com/inline-block/"/>
+    <id>http://www.forsigner.com/inline-block/</id>
     <published>2013-03-27T16:00:00.000Z</published>
     <updated>2016-02-24T09:39:40.000Z</updated>
     
@@ -1301,8 +1303,8 @@
   
   <entry>
     <title>清除浮动的方法</title>
-    <link href="http://www.forsigner.com/2013/03/25/css-clearfix/"/>
-    <id>http://www.forsigner.com/2013/03/25/css-clearfix/</id>
+    <link href="http://www.forsigner.com/css-clearfix/"/>
+    <id>http://www.forsigner.com/css-clearfix/</id>
     <published>2013-03-24T16:00:00.000Z</published>
     <updated>2016-02-24T09:38:50.000Z</updated>
     
@@ -1357,8 +1359,8 @@
   
   <entry>
     <title>CSS BFC(Block Formatting Context)</title>
-    <link href="http://www.forsigner.com/2013/03/20/css-bfc/"/>
-    <id>http://www.forsigner.com/2013/03/20/css-bfc/</id>
+    <link href="http://www.forsigner.com/css-bfc/"/>
+    <id>http://www.forsigner.com/css-bfc/</id>
     <published>2013-03-19T16:00:00.000Z</published>
     <updated>2016-02-24T09:38:45.000Z</updated>
     
@@ -1402,8 +1404,8 @@
   
   <entry>
     <title>IE Haslayout</title>
-    <link href="http://www.forsigner.com/2013/03/18/iehaslayout/"/>
-    <id>http://www.forsigner.com/2013/03/18/iehaslayout/</id>
+    <link href="http://www.forsigner.com/iehaslayout/"/>
+    <id>http://www.forsigner.com/iehaslayout/</id>
     <published>2013-03-17T16:00:00.000Z</published>
     <updated>2016-02-24T09:38:30.000Z</updated>
     
@@ -1512,8 +1514,8 @@
   
   <entry>
     <title>《平凡的世界》：不平凡的人生</title>
-    <link href="http://www.forsigner.com/2013/02/23/ordinary-world/"/>
-    <id>http://www.forsigner.com/2013/02/23/ordinary-world/</id>
+    <link href="http://www.forsigner.com/ordinary-world/"/>
+    <id>http://www.forsigner.com/ordinary-world/</id>
     <published>2013-02-22T16:00:00.000Z</published>
     <updated>2016-02-24T09:46:24.000Z</updated>
     
@@ -1541,8 +1543,8 @@
   
   <entry>
     <title>Don&#39;t make me think(读书笔记)</title>
-    <link href="http://www.forsigner.com/2013/02/16/dont-make-me-think/"/>
-    <id>http://www.forsigner.com/2013/02/16/dont-make-me-think/</id>
+    <link href="http://www.forsigner.com/dont-make-me-think/"/>
+    <id>http://www.forsigner.com/dont-make-me-think/</id>
     <published>2013-02-15T16:00:00.000Z</published>
     <updated>2016-02-24T09:38:56.000Z</updated>
     
@@ -1591,8 +1593,8 @@
   
   <entry>
     <title>Javascript闭包</title>
-    <link href="http://www.forsigner.com/2013/02/13/learning-javascript-closure/"/>
-    <id>http://www.forsigner.com/2013/02/13/learning-javascript-closure/</id>
+    <link href="http://www.forsigner.com/learning-javascript-closure/"/>
+    <id>http://www.forsigner.com/learning-javascript-closure/</id>
     <published>2013-02-12T16:00:00.000Z</published>
     <updated>2016-02-24T09:40:58.000Z</updated>
     
@@ -1637,8 +1639,8 @@
   
   <entry>
     <title>JavaScript回调函数的实现</title>
-    <link href="http://www.forsigner.com/2013/02/12/javascript-callback/"/>
-    <id>http://www.forsigner.com/2013/02/12/javascript-callback/</id>
+    <link href="http://www.forsigner.com/javascript-callback/"/>
+    <id>http://www.forsigner.com/javascript-callback/</id>
     <published>2013-02-11T16:00:00.000Z</published>
     <updated>2016-02-24T09:40:19.000Z</updated>
     
@@ -1670,8 +1672,8 @@
   
   <entry>
     <title>重读JavaScript经典书籍计划</title>
-    <link href="http://www.forsigner.com/2013/02/02/javascript-reading/"/>
-    <id>http://www.forsigner.com/2013/02/02/javascript-reading/</id>
+    <link href="http://www.forsigner.com/javascript-reading/"/>
+    <id>http://www.forsigner.com/javascript-reading/</id>
     <published>2013-02-01T16:00:00.000Z</published>
     <updated>2016-02-24T09:40:37.000Z</updated>
     
@@ -1713,8 +1715,8 @@
   
   <entry>
     <title>vim插件project的用法</title>
-    <link href="http://www.forsigner.com/2012/12/29/use-vim-project/"/>
-    <id>http://www.forsigner.com/2012/12/29/use-vim-project/</id>
+    <link href="http://www.forsigner.com/use-vim-project/"/>
+    <id>http://www.forsigner.com/use-vim-project/</id>
     <published>2012-12-28T16:00:00.000Z</published>
     <updated>2016-02-24T09:47:55.000Z</updated>
     
@@ -1779,8 +1781,8 @@
   
   <entry>
     <title>Github Pages绑定域名</title>
-    <link href="http://www.forsigner.com/2012/11/12/github-pages-custom-doman/"/>
-    <id>http://www.forsigner.com/2012/11/12/github-pages-custom-doman/</id>
+    <link href="http://www.forsigner.com/github-pages-custom-doman/"/>
+    <id>http://www.forsigner.com/github-pages-custom-doman/</id>
     <published>2012-11-11T16:00:00.000Z</published>
     <updated>2016-02-24T09:39:14.000Z</updated>
     

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>在Chrome下调试Sass | forsigner的博客</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="CSS,Sass," />
+  
+
+  <meta name="description" content="用Sass写CSS很爽，但是调试起来却让人头痛，因为CSS文件是编译生成的，所以在Chrome调试时得出的CSS位置信息并没有多大帮助。为了解决Sass的调试难题，也有开发这开发了一些Chrome插件，如SASS Inspector, 我体验了一整子，用起来并不是很舒服。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Chrome下调试Sass">
+<meta property="og:url" content="http://www.forsigner.com/sass-sourcemap/index.html">
+<meta property="og:site_name" content="forsigner的博客">
+<meta property="og:description" content="用Sass写CSS很爽，但是调试起来却让人头痛，因为CSS文件是编译生成的，所以在Chrome调试时得出的CSS位置信息并没有多大帮助。为了解决Sass的调试难题，也有开发这开发了一些Chrome插件，如SASS Inspector, 我体验了一整子，用起来并不是很舒服。">
+<meta property="og:updated_time" content="2016-02-24T09:46:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在Chrome下调试Sass">
+<meta name="twitter:description" content="用Sass写CSS很爽，但是调试起来却让人头痛，因为CSS文件是编译生成的，所以在Chrome调试时得出的CSS位置信息并没有多大帮助。为了解决Sass的调试难题，也有开发这开发了一些Chrome插件，如SASS Inspector, 我体验了一整子，用起来并不是很舒服。">
+  
+  
+
+  
+
+
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+  <div class="content-post">
+  <a class="avatar" href="/archives">
+    <img src="/images/avatar.jpg" alt="" />
+  </a>
+  <article id="post-sass-sourcemap" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <div class="article-title article" >
+      在Chrome下调试Sass
+    </div>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    2013-12-06
+
+    <span> | </span>
+
+    <span class="article-author">forsigner</span>
+
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用Sass写CSS很爽，但是调试起来却让人头痛，因为CSS文件是编译生成的，所以在Chrome调试时得出的CSS位置信息并没有多大帮助。为了解决Sass的调试难题，也有开发这开发了一些Chrome插件，如<a href="https://chrome.google.com/webstore/detail/sass-inspector/lkofmbmllpgfbnonmnenkiakimpgoamn" target="_blank" rel="external">SASS Inspector</a>, 我体验了一整子，用起来并不是很舒服。<br><a id="more"></a></p>
+<p>Google是个好人，为了让开发这更好的使用CSS预处理器，为Chrome增加了一个叫source map功能，利用source map，我们可以在Chrome像调试CSS一样调试Sass,但前提是所用的CSS预处理器需要支持source map</p>
+<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p><strong>首先，要让Chrome启用CSS source maps</strong></p>
+<p>CSS source maps默认是启用的，不过你还要启用Auto-reload generated CSS,方法是：打开开发者工具的设置，然后点击General,然后启用Enable CSS source maps 和 Auto-reload generated CSS。</p>
+<p><strong>然后，使用Sass或Compass编译CSS</strong></p>
+<p><strong>如果直接使用Sass</strong>，因为要支持source map，所以要安装pre版</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">gem install sass -v <span class="string">'&gt;=3.3.0alpha'</span> --pre</span><br></pre></td></tr></table></figure>
+<p>安装好后,就可以编译支持source map的CSS了，例如：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sass --watch --sourcemap sass/styles.scss:css/styles.css <span class="comment"># 编译一个style.scss文件</span></span><br><span class="line">sass --watch --compass --sourcemap sass/styles.scss:css/styles.css <span class="comment"># 编译一个style.scss文件（如果有用到compass）</span></span><br><span class="line">sass --watch --sourcemap sass/:css/ <span class="comment"># 编译整个文件夹里的所有scss文件</span></span><br></pre></td></tr></table></figure>
+<p><strong>如果使用Compass</strong>，为了支持source map，也要要安装pre版</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">gem install compass --pre</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">gem install compass-sourcemaps --pre</span><br></pre></td></tr></table></figure>
+<p>安装好后,在config.rb中添加<code>sass_options = {:sourcemap =&gt; true}</code>,就可以编译支持source map的CSS了：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">compass watch</span><br></pre></td></tr></table></figure>
+<p>最好，把编译好的css引入到的项目中，然后审查元素，奇迹就出现了。</p>
+<p>####推荐阅读</p>
+<ul>
+<li><a href="https://developers.google.com/chrome-developer-tools/docs/css-preprocessors?hl=zh-CN" target="_blank" rel="external">Working with CSS Preprocessors</a></li>
+</ul>
+
+      
+    </div>
+
+    
+      
+
+    
+
+  </div>
+</article>
+
+
+
+<section class="disqus-comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+
+
+</div>
+
+  
+<script>
+  var disqus_shortname = 'forsigner';
+  
+  var disqus_url = 'http://www.forsigner.com/sass-sourcemap/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"undefined"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0]
+   || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+<!-- 多说公共JS代码 end -->
+
+</body>
+</html>
