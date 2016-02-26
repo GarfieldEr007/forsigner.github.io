@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>MongoDB Shell Command | forsigner的博客</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="MongoDB," />
+  
+
+  <meta name="description" content="登录数据库mongod &amp;lt;hostname|ip&amp;gt; # 登录MongoDB
+创建数据库use &amp;lt;dbname&amp;gt; # 切换到某个数据库 | 创建数据库db # 查看当前数据库show dbs # 查看服务器上的数据库db.hello.insert(&amp;#123;&quot;name&quot;:&quot;testdb&quot;&amp;#125;) # 该操作会在test2数据库中新建一个hellocollection，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MongoDB Shell Command">
+<meta property="og:url" content="http://www.forsigner.com/2015/07/01/MongoDB-Command/index.html">
+<meta property="og:site_name" content="forsigner的博客">
+<meta property="og:description" content="登录数据库mongod &amp;lt;hostname|ip&amp;gt; # 登录MongoDB
+创建数据库use &amp;lt;dbname&amp;gt; # 切换到某个数据库 | 创建数据库db # 查看当前数据库show dbs # 查看服务器上的数据库db.hello.insert(&amp;#123;&quot;name&quot;:&quot;testdb&quot;&amp;#125;) # 该操作会在test2数据库中新建一个hellocollection，">
+<meta property="og:updated_time" content="2016-02-24T09:45:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MongoDB Shell Command">
+<meta name="twitter:description" content="登录数据库mongod &amp;lt;hostname|ip&amp;gt; # 登录MongoDB
+创建数据库use &amp;lt;dbname&amp;gt; # 切换到某个数据库 | 创建数据库db # 查看当前数据库show dbs # 查看服务器上的数据库db.hello.insert(&amp;#123;&quot;name&quot;:&quot;testdb&quot;&amp;#125;) # 该操作会在test2数据库中新建一个hellocollection，">
+  
+  
+
+  
+
+
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+  <div class="content-post">
+  <a class="avatar" href="/archives">
+    <img src="/images/avatar.jpg" alt="" />
+  </a>
+  <article id="post-MongoDB-Command" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    <a class="post-title" href="/2015/07/01/MongoDB-Command/">MongoDB Shell Command</a>
+
+  </header>
+
+  <div class="article-meta">
+    <span>2015-07-01</span>
+
+    <span> | </span>
+
+    <span class="article-author">forsigner</span>
+
+    <span> | </span>
+
+    
+  <span class="article-category">
+    <a class="article-category-link" href="/categories/后端/">后端</a>
+  </span>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="登录数据库"><a href="#登录数据库" class="headerlink" title="登录数据库"></a>登录数据库</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mongod &lt;hostname|ip&gt; <span class="comment"># 登录MongoDB</span></span><br></pre></td></tr></table></figure>
+<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">use &lt;dbname&gt; <span class="comment"># 切换到某个数据库 | 创建数据库</span></span><br><span class="line">db <span class="comment"># 查看当前数据库</span></span><br><span class="line">show dbs <span class="comment"># 查看服务器上的数据库</span></span><br><span class="line">db.hello.insert(&#123;<span class="string">"name"</span>:<span class="string">"testdb"</span>&#125;) <span class="comment"># 该操作会在test2数据库中新建一个hellocollection，并在其中插入一条记录</span></span><br></pre></td></tr></table></figure>
+<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">db.dropDatabase() <span class="comment"># 删除数据库</span></span><br></pre></td></tr></table></figure>
+<h2 id="创建collection"><a href="#创建collection" class="headerlink" title="创建collection"></a>创建collection</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">db.createCollection(name, options)</span><br><span class="line">db.createCollection(<span class="string">"Hello"</span>, &#123; capped : true, autoIndexID : true, size : <span class="number">6142800</span>, max : <span class="number">10000</span> &#125; )</span><br><span class="line">db.Hello.insert(&#123;<span class="string">"hello"</span> : <span class="string">"world"</span>&#125;) 插入数据自动创建collection</span><br><span class="line">show collections <span class="comment"># 查看当前数据库中的所有collection</span></span><br><span class="line">db.Hello.renameCollection(<span class="string">"hi"</span>) <span class="comment"># 重命名collection</span></span><br></pre></td></tr></table></figure>
+<h2 id="删除collection"><a href="#删除collection" class="headerlink" title="删除collection"></a>删除collection</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">db.&lt;collection_name&gt;.drop() <span class="comment"># 删除collection</span></span><br></pre></td></tr></table></figure>
+<h2 id="插入document"><a href="#插入document" class="headerlink" title="插入document"></a>插入document</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">db.&lt;collection_name&gt;.insert(&lt;document&gt;)</span><br></pre></td></tr></table></figure>
+<h2 id="查询document"><a href="#查询document" class="headerlink" title="查询document"></a>查询document</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">db.&lt;collection_name&gt;.find() <span class="comment"># 查询有document</span></span><br><span class="line">db.&lt;collection_name&gt;.find().pretty() <span class="comment"># 格式化显示</span></span><br></pre></td></tr></table></figure>
+<h2 id="更新document"><a href="#更新document" class="headerlink" title="更新document"></a>更新document</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">db.&lt;collection_name&gt;.update(SELECTIOIN_CRITERIA, UPDATED_DATA)</span><br><span class="line">db.mycol.update(&#123;<span class="string">'title'</span>:<span class="string">'MongoDB Overview'</span>&#125;,&#123;$set:&#123;<span class="string">'title'</span>:<span class="string">'New MongoDB Tutorial'</span>&#125;&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># MongoDB默认将只更新单一的文件，来更新多个你需要设置参数置'multi' 为true</span></span><br><span class="line">db.mycol.update(&#123;<span class="string">'title'</span>:<span class="string">'MongoDB Overview'</span>&#125;,&#123;$set:&#123;<span class="string">'title'</span>:<span class="string">'New MongoDB Tutorial'</span>&#125;&#125;,&#123;multi:true&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment"># save() 方法替换现有的document</span></span><br><span class="line">db.&lt;collection_name&gt;.save(&#123;_id:ObjectId(),NEW_DATA&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="删除document"><a href="#删除document" class="headerlink" title="删除document"></a>删除document</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">db.&lt;collection_name&gt;.remove(DELLETION_CRITTERIA)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+      
+
+    
+
+  </div>
+</article>
+
+
+
+<section class="disqus-comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+
+
+</div>
+
+  
+<script>
+  var disqus_shortname = 'forsigner';
+  
+  var disqus_url = 'http://www.forsigner.com/2015/07/01/MongoDB-Command/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"undefined"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0]
+   || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+<!-- 多说公共JS代码 end -->
+
+</body>
+</html>
