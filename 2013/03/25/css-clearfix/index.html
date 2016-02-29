@@ -21,9 +21,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="清除浮动的方法">
 <meta name="twitter:description" content="float是网页布局中最常用的css属性之一，但是使用float同样会带来各种各样的问题，例如它使元素脱离正常的文档流，使父元素的高度坍塌等，所以我们经常要清除浮动。">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -45,51 +47,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-css-clearfix" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-css-clearfix" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">清除浮动的方法</h1>
 
@@ -111,11 +121,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>float是网页布局中最常用的css属性之一，但是使用float同样会带来各种各样的问题，例如它使元素脱离正常的文档流，使父元素的高度坍塌等，所以我们经常要清除浮动。</p>
+  <div class="article-content">
+    
+      <p>float是网页布局中最常用的css属性之一，但是使用float同样会带来各种各样的问题，例如它使元素脱离正常的文档流，使父元素的高度坍塌等，所以我们经常要清除浮动。</p>
 <a id="more"></a>
 <p>现在，越来越多人反对使用float来布局，最具代表性的就是google，因为float布局是会产生各种问题，有事问题还是莫名其妙的，而且使用display: inline-block能够完成大多数float能完成的布局。但某些方面，display: inline-block并不能代替float，例如float的方向性，float依然是常用的布局属性之一，所以清除浮动不可避免。</p>
 <p>清除浮动的方法很多，不过从分类来说，清除浮动的方法可以分成两类：</p>
@@ -150,14 +158,7 @@
 <li>更简洁的 CSS 清理浮动方式</li>
 </ul>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

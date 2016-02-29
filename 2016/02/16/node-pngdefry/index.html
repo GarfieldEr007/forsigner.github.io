@@ -27,9 +27,11 @@
 <meta name="twitter:description" content="最近做项目遇到一个需求：解析apk和ipa包，然后把里面的icon上传到服务器。
 问题解析上传过程比较简单，我使用JSZip对apk和ipa进行解压，然后把找到里面的icon上传到服务器。但是，当我在网页中使用图片时，问题出现了。对于apk中的icon，没有任何问题，但是对于ipa中解析出来的图片，在safari中可以正常显示，在其他任何浏览器去无法显示。
 原因Google后发现，是苹果对png图">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -51,51 +53,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-node-pngdefry" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-node-pngdefry" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">用JavaScript修复ipa处理过的的png图片</h1>
 
@@ -117,11 +127,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近做项目遇到一个需求：<strong>解析apk和ipa包，然后把里面的icon上传到服务器。</strong></p>
+  <div class="article-content">
+    
+      <p>最近做项目遇到一个需求：<strong>解析apk和ipa包，然后把里面的icon上传到服务器。</strong></p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>解析上传过程比较简单，我使用<a href="https://stuk.github.io/jszip/" target="_blank" rel="external">JSZip</a>对apk和ipa进行解压，然后把找到里面的icon上传到服务器。但是，当我在网页中使用图片时，问题出现了。对于apk中的icon，没有任何问题，但是对于ipa中解析出来的图片，在safari中可以正常显示，在其他任何浏览器去无法显示。</p>
 <h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>Google后发现，是苹果对png图片进行了优化处理，具体看这篇文章（<a href="http://www.jongware.com/pngdefry.html" target="_blank" rel="external">查看</a>），在文章中我们可以了解到一些有用信息：</p>
 <blockquote>
@@ -140,14 +148,7 @@
 <h4 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h4><p><a href="https://github.com/forsigner/node-pngdefry" target="_blank" rel="external">node-pngdefry</a></p>
 <h4 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h4><p>最后感谢上面提到的文章的作者Jongware。</p>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

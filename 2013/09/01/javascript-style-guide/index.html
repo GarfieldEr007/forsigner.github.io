@@ -21,9 +21,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 编码风格指南">
 <meta name="twitter:description" content="程序语言的编码风格指南对于一个长期维护的软件而言是非常重要的。本指南是基于“Java语言编码规范”（Code Conventions fo the Java Programming Language）和Crockford的（JavaScript）规范，同时结合了我个人的经验和喜好做了一些改动。">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -45,51 +47,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-javascript-style-guide" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-javascript-style-guide" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">JavaScript 编码风格指南</h1>
 
@@ -111,11 +121,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>程序语言的编码风格指南对于一个长期维护的软件而言是非常重要的。本指南是基于“Java语言编码规范”（Code Conventions fo the Java Programming Language）和Crockford的（JavaScript）规范，同时结合了我个人的经验和喜好做了一些改动。</p>
+  <div class="article-content">
+    
+      <p>程序语言的编码风格指南对于一个长期维护的软件而言是非常重要的。本指南是基于“Java语言编码规范”（Code Conventions fo the Java Programming Language）和Crockford的（JavaScript）规范，同时结合了我个人的经验和喜好做了一些改动。</p>
 <a id="more"></a>
 <h2 id="1-缩进"><a href="#1-缩进" class="headerlink" title="1.缩进"></a>1.缩进</h2><p>每一行的层级由四个空格组成，避免使用制表符（Tab）进行缩进。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 好的写法</span></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    doSomething();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -281,14 +289,7 @@
 </ul>
 <p>数字应当使用十进制整数，科学计数法表示整数，十六进制整数，或者十进制浮点小数，小数点前后应当至少保留一位数字。避免使用八进制直接量。</p>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

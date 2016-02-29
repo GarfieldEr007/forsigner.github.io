@@ -25,9 +25,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ionic Mac下连接android手机调试">
 <meta name="twitter:description" content="前端开发时，调试比较方便，一个Chrome，不用编译不用等待，非常方便。ionic开发就不一样了，界面调试虽然可以用Chrome，但是Chrome代替不了真实的手机环境，ionic程序经常可以在Chrome的emulator可以运行，但到着呢是的手机环境就撒娇了。有两种方法可以对ionic程序进行调试，一种是虚拟机，另一种是真实的android手机。虚拟机的优点是就是你不需要一部android手机">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -49,51 +51,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-mac-android-debug" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-mac-android-debug" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">ionic Mac下连接android手机调试</h1>
 
@@ -115,11 +125,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>前端开发时，调试比较方便，一个Chrome，不用编译不用等待，非常方便。ionic开发就不一样了，界面调试虽然可以用Chrome，但是Chrome代替不了真实的手机环境，ionic程序经常可以在Chrome的emulator可以运行，但到着呢是的手机环境就撒娇了。有两种方法可以对ionic程序进行调试，一种是虚拟机，另一种是真实的android手机。虚拟机的优点是就是你不需要一部android手机，只要配置好android开发环境就好了，但虚拟机慢得实在让人无法忍受；另一种就是真机调试咯，真机调试优点就是快。在Mac下，可能会遇到adb无法连接android手机的情况，下面是我的解决办法。<br><a id="more"></a></p>
+  <div class="article-content">
+    
+      <p>前端开发时，调试比较方便，一个Chrome，不用编译不用等待，非常方便。ionic开发就不一样了，界面调试虽然可以用Chrome，但是Chrome代替不了真实的手机环境，ionic程序经常可以在Chrome的emulator可以运行，但到着呢是的手机环境就撒娇了。有两种方法可以对ionic程序进行调试，一种是虚拟机，另一种是真实的android手机。虚拟机的优点是就是你不需要一部android手机，只要配置好android开发环境就好了，但虚拟机慢得实在让人无法忍受；另一种就是真机调试咯，真机调试优点就是快。在Mac下，可能会遇到adb无法连接android手机的情况，下面是我的解决办法。<br><a id="more"></a></p>
 <h2 id="获取Android设备的Vendor-ID"><a href="#获取Android设备的Vendor-ID" class="headerlink" title="获取Android设备的Vendor ID"></a>获取Android设备的Vendor ID</h2><p>执行以下命令查看连接的USB设备信息</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ system_profiler SPUSBDataType</span><br></pre></td></tr></table></figure>
 <p>执行完这条命令后，找到你手机的连接信息，例如我的手机手魅蓝，连接信息如下:</p>
@@ -137,14 +145,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ ionic run android</span><br></pre></td></tr></table></figure>
 <p>当然,你使用Eclipse或Android Studio开发Android App时，同样可以使用这种方法连接你的Android设备。</p>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

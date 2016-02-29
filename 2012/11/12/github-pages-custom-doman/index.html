@@ -21,9 +21,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Pages绑定域名">
 <meta name="twitter:description" content="Github Pages的默认域名是github的二级域名username.github.com或者username.github.io，需要绑定自己的独立域名的话也非常简单，只要以下两步：">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -45,51 +47,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-github-pages-custom-doman" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-github-pages-custom-doman" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">Github Pages绑定域名</h1>
 
@@ -111,11 +121,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Github Pages的默认域名是github的二级域名username.github.com或者username.github.io，需要绑定自己的独立域名的话也非常简单，只要以下两步：</p>
+  <div class="article-content">
+    
+      <p>Github Pages的默认域名是github的二级域名username.github.com或者username.github.io，需要绑定自己的独立域名的话也非常简单，只要以下两步：</p>
 <a id="more"></a>
 <h2 id="一、增加CNAME"><a href="#一、增加CNAME" class="headerlink" title="一、增加CNAME"></a>一、增加CNAME</h2><p>在你的git仓库创建一个CNAME文件，内容写你的域名。比如我的域名是forsigner.com，在CNAME文件写入“forsigner.com”就好了。</p>
 <h2 id="二、域名解析"><a href="#二、域名解析" class="headerlink" title="二、域名解析"></a>二、域名解析</h2><p>首先获取你Github Pages域名的ip，比如你的Github pages域名为forsigner.github.io，执行一下命令：</p>
@@ -123,14 +131,7 @@
 <p>你应该可以得到一个IP，比如IP是207.97.227.245。</p>
 <p>最后去你的域名注册商后台，增加一条A记录到该IP就好了。</p>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

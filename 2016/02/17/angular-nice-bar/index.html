@@ -24,9 +24,11 @@
 <meta name="twitter:title" content="不可错过的Angular scrollbar library">
 <meta name="twitter:description" content="最近，工作中忙于开发一个desktop apps，主要技术基于 electron 和 angular.js 。开发过程中，发现在 Windows 中滚动条巨丑无敌，作为一个设计出身的程序猿，我当然不能忍，于是我用下班时间造了一个 scrollbar 轮子，叫 angular-nice-bar （查看 Demo）。
 我希望这个滚动条长得好看，可自定义，轻量级，不要依赖于jQuery，能和Ajax一起">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -48,51 +50,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-angular-nice-bar" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-angular-nice-bar" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">不可错过的Angular scrollbar library</h1>
 
@@ -114,11 +124,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近，工作中忙于开发一个desktop apps，主要技术基于 <a href="https://github.com/atom/electron" target="_blank" rel="external">electron</a> 和 <a href="https://github.com/angular/angular.js" target="_blank" rel="external">angular.js</a> 。开发过程中，发现在 Windows 中滚动条巨丑无敌，作为一个设计出身的程序猿，我当然不能忍，于是我用下班时间造了一个 scrollbar 轮子，叫 <strong><a href="https://github.com/forsigner/angular-nice-bar" target="_blank" rel="external">angular-nice-bar</a></strong> （<a href="http://forsigner.com/nice-bar/" target="_blank" rel="external">查看 Demo</a>）。</p>
+  <div class="article-content">
+    
+      <p>最近，工作中忙于开发一个desktop apps，主要技术基于 <a href="https://github.com/atom/electron" target="_blank" rel="external">electron</a> 和 <a href="https://github.com/angular/angular.js" target="_blank" rel="external">angular.js</a> 。开发过程中，发现在 Windows 中滚动条巨丑无敌，作为一个设计出身的程序猿，我当然不能忍，于是我用下班时间造了一个 scrollbar 轮子，叫 <strong><a href="https://github.com/forsigner/angular-nice-bar" target="_blank" rel="external">angular-nice-bar</a></strong> （<a href="http://forsigner.com/nice-bar/" target="_blank" rel="external">查看 Demo</a>）。</p>
 <p>我希望这个滚动条长得好看，可自定义，轻量级，不要依赖于jQuery，能和Ajax一起用，且支持黑色主题，因为我们的app是深色背景的。所以这个滚动条有以下高大上的Features ^ ^:</p>
 <ul>
 <li>Nice looking</li>
@@ -138,14 +146,7 @@
 <p>可惜，这些libraries并不能很好满足我的需求，有些长得不好看，有些用起来别扭，有些和Ajax一起用就挂了，有些太重量级。因此我决定自己去实现一个。</p>
 <p>希望<strong><a href="https://github.com/forsigner/angular-nice-bar" target="_blank" rel="external">angular-nice-bar</a></strong> 能帮到有需要的人。</p>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

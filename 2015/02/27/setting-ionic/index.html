@@ -21,9 +21,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac中配置ionic框架">
 <meta name="twitter:description" content="最近想做一个App，却苦于自己没有那么多精力去学习Java和Object-C，自己只对JavaScript最熟悉，所以决定用Web来实现，也就是做一Hybrid App。">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -45,51 +47,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-setting-ionic" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-setting-ionic" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">Mac中配置ionic框架</h1>
 
@@ -111,11 +121,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近想做一个App，却苦于自己没有那么多精力去学习Java和Object-C，自己只对JavaScript最熟悉，所以决定用Web来实现，也就是做一Hybrid App。<br><a id="more"></a></p>
+  <div class="article-content">
+    
+      <p>最近想做一个App，却苦于自己没有那么多精力去学习Java和Object-C，自己只对JavaScript最熟悉，所以决定用Web来实现，也就是做一Hybrid App。<br><a id="more"></a></p>
 <p>参考了很多Hybrid App的解决方案，觉得ionic最适合我。一是它性能比较出众，而是他基于Agular，我对Agular非常熟悉。</p>
 <p>下面是ionic开发环境的配置方法，没有非常复杂：</p>
 <h2 id="安装ionic"><a href="#安装ionic" class="headerlink" title="安装ionic"></a>安装ionic</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$  npm install -g cordova ionic  <span class="comment"># 安装cordova和ionic</span></span><br></pre></td></tr></table></figure>
@@ -129,14 +137,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ cd myApp</span><br><span class="line">$ ionic platform add android //这行可能会报错</span><br><span class="line">$ ionic build android</span><br><span class="line">$ ionic emulate android</span><br></pre></td></tr></table></figure>
 <p>整个过程很简单，可能在配置android开发环境比较麻烦。</p>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

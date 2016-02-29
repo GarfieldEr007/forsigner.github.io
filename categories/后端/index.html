@@ -20,9 +20,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="forsigner的博客">
 <meta name="twitter:description" content="forsigner, 前端开发, 用户体验, 设计, frontend, design, nodejs">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -46,50 +48,59 @@
 <body>
   <div class="content content-category">
   <div class="page-header">
-  <div class="breadcrumb"><i class="icon-location"></i><span>分类</span></div>
 
+  
+    <div class="breadcrumb">
+      <div class="location">分类</div>
+      <i class="icon-location"></i>
+    </div>
+  
+
+  
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
-</div>
+    </ul>
+  </div>
+
+
 
   <div class="box-blog-info">
     <a class="avatar" href="/">
@@ -106,7 +117,49 @@
   </div>
 </div>
 
-  <ul class="list-post"><li class="item-category-name item-title item-title-0">
+  <section class="category-box">
+  <div class="category-title">分类</div>
+  <div class="category-list">
+    
+      <a class="category-item" href="#前端">
+        <span class="category-name">前端</span>
+        <span class="category-size">( 15 )</span>
+      </a>
+    
+      <a class="category-item" href="#后端">
+        <span class="category-name">后端</span>
+        <span class="category-size">( 2 )</span>
+      </a>
+    
+      <a class="category-item" href="#工具">
+        <span class="category-name">工具</span>
+        <span class="category-size">( 6 )</span>
+      </a>
+    
+      <a class="category-item" href="#生活">
+        <span class="category-name">生活</span>
+        <span class="category-size">( 1 )</span>
+      </a>
+    
+      <a class="category-item" href="#设计">
+        <span class="category-name">设计</span>
+        <span class="category-size">( 2 )</span>
+      </a>
+    
+      <a class="category-item" href="#读书">
+        <span class="category-name">读书</span>
+        <span class="category-size">( 2 )</span>
+      </a>
+    
+      <a class="category-item" href="#随笔">
+        <span class="category-name">随笔</span>
+        <span class="category-size">( 1 )</span>
+      </a>
+    
+  </div>
+</section>
+
+  <ul class="list-post"><li id="前端" class="item-category-name item-title item-title-0">
   <!--
     <a href="" class="text-year">
    -->
@@ -206,7 +259,7 @@
   <a class="post-title" href="/2016/02/17/angular-nice-bar/">不可错过的Angular scrollbar library</a>
 
 </li>
-<li class="item-category-name item-title item-title-1">
+<li id="后端" class="item-category-name item-title item-title-1">
   <!--
     <a href="" class="text-year">
    -->
@@ -228,7 +281,7 @@
   <a class="post-title" href="/2015/07/01/MongoDB-Command/">MongoDB Shell Command</a>
 
 </li>
-<li class="item-category-name item-title item-title-2">
+<li id="工具" class="item-category-name item-title item-title-2">
   <!--
     <a href="" class="text-year">
    -->
@@ -274,7 +327,7 @@
   <a class="post-title" href="/2013/08/23/Unix-command/">Unix 系统下常用命令</a>
 
 </li>
-<li class="item-category-name item-title item-title-3">
+<li id="生活" class="item-category-name item-title item-title-3">
   <!--
     <a href="" class="text-year">
    -->
@@ -290,7 +343,7 @@
   <a class="post-title" href="/2014/03/24/traval/">云南之行</a>
 
 </li>
-<li class="item-category-name item-title item-title-4">
+<li id="设计" class="item-category-name item-title item-title-4">
   <!--
     <a href="" class="text-year">
    -->
@@ -312,7 +365,7 @@
   <a class="post-title" href="/2013/02/16/dont-make-me-think/">Don&#39;t make me think(读书笔记)</a>
 
 </li>
-<li class="item-category-name item-title item-title-0">
+<li id="读书" class="item-category-name item-title item-title-0">
   <!--
     <a href="" class="text-year">
    -->
@@ -334,7 +387,7 @@
   <a class="post-title" href="/2013/02/02/javascript-reading/">重读JavaScript经典书籍计划</a>
 
 </li>
-<li class="item-category-name item-title item-title-1">
+<li id="随笔" class="item-category-name item-title item-title-1">
   <!--
     <a href="" class="text-year">
    -->

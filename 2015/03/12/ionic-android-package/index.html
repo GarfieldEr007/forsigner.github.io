@@ -21,9 +21,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ionic android打包">
 <meta name="twitter:description" content="App用ionic开发完成后，就可以打包发布市场啦。发布一个App可以上传市场的包，关键要做两样东西，一是打一个release包，而是给包签名。命令不多，但命令比较长，记录一下。">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -45,51 +47,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-ionic-android-package" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-ionic-android-package" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">ionic android打包</h1>
 
@@ -111,11 +121,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>App用ionic开发完成后，就可以打包发布市场啦。发布一个App可以上传市场的包，关键要做两样东西，一是打一个release包，而是给包签名。命令不多，但命令比较长，记录一下。<br><a id="more"></a></p>
+  <div class="article-content">
+    
+      <p>App用ionic开发完成后，就可以打包发布市场啦。发布一个App可以上传市场的包，关键要做两样东西，一是打一个release包，而是给包签名。命令不多，但命令比较长，记录一下。<br><a id="more"></a></p>
 <h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><p>首先生成 release包</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$  cordova build --release android  <span class="comment"># 记得加上--release 参数，不然会打出debug包</span></span><br></pre></td></tr></table></figure>
 <p>执行完这条命令后，cordova会根据你的config.xml生成一个未签名的apk包。在platform文件夹可以找到apk包（<code>platforms/android/ant-build</code>），接下来就可以签名了。</p>
@@ -132,14 +140,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ zipalign -v <span class="number">4</span> HelloWorld-release-unsigned.apk HelloWorld.apk</span><br></pre></td></tr></table></figure>
 <p>done</p>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

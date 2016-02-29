@@ -30,9 +30,11 @@
 先看看纯CSS美化过后的radio和checkbox效果：查看。
 项目地址：magic-check
 在CSS出现之前，我们美化radio和checkbox需要借助JavaScript，最具代表性的就是icheck，它功能强大复杂并且主题很多。icheck这种美化方案很好很强大，但是">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -54,51 +56,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-magic-check" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-magic-check" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">用纯CSS美化radio和checkbox</h1>
 
@@ -120,11 +130,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Radio和checkbox需要美化吗？答案是必须的，因为设计风格一直都会变化，原生的样式百年不变肯定满足不了需求。</p>
+  <div class="article-content">
+    
+      <p>Radio和checkbox需要美化吗？答案是必须的，因为设计风格一直都会变化，原生的样式百年不变肯定满足不了需求。</p>
 <p>先看看纯CSS美化过后的radio和checkbox效果：<a href="http://forsigner.com/magic-check/" target="_blank" rel="external">查看</a>。</p>
 <p>项目地址：<a href="https://github.com/forsigner/magic-check" target="_blank" rel="external">magic-check</a></p>
 <p>在CSS出现之前，我们美化radio和checkbox需要借助JavaScript，最具代表性的就是<a href="https://github.com/fronteed/icheck" target="_blank" rel="external">icheck</a>，它功能强大复杂并且主题很多。icheck这种美化方案很好很强大，但是也有很多缺点：</p>
@@ -147,14 +155,7 @@
 <p><strong> Checkbox</strong></p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="value">"magic-checkbox"</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span> <span class="attribute">name</span>=<span class="value">"layout"</span> <span class="attribute">id</span>=<span class="value">"1"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"1"</span>&gt;</span>Normal<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 

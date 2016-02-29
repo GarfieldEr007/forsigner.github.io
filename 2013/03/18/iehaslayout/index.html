@@ -21,9 +21,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IE Haslayout">
 <meta name="twitter:description" content="我们们那知道浏览器有bug，而且Windows上的lE的bug 似乎比太多数浏览器都多。IE/Win的衣现与其他浏览器不同的原因之一是，显示引擎使用一个称为布局(layout)的内部概念。因为布均是一个专门针对显示引擎内部工作方式的概念，所以一般悄况下不需要了解它。但是，布局问题是许多IE/Win显示bug的根源，所以理解这个概念以及它如何影响CSS是有捂助的。">
-  
+
   
 
+  
+    <link rel="icon" href="/favicon.ico">
   
 
 
@@ -45,51 +47,59 @@
 </head>
 
 <body>
-  <div class="content-post">
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
-  <div class="home-entry">盒子</div>
-  <ul class="list-entry">
-    
+    <div class="toolbox-entry">盒子</div>
+    <ul class="list-toolbox">
       
-        <li class="item-entry">
-          <a href="/">首页</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/">博客</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/category/">分类</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/archives/">博客</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/tag/">标签</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/">友链</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/category/">分类</a>
-        </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/">关于</a>
+          </li>
+        
       
-    
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/atom.xml">RSS</a>
+          </li>
+        
       
-        <li class="item-entry">
-          <a href="/tags/">标签</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/about/">关于</a>
-        </li>
-      
-    
-      
-        <li class="item-entry">
-          <a href="/atom.xml">RSS</a>
-        </li>
-      
-    
-  </ul>
+    </ul>
+  </div>
+
+
 </div>
 
-  <article id="post-iehaslayout" class="article article-type-post" itemscope itemprop="blogPost">
+<!-- todo -->
+
+
+<div class="content-post CENTER">
+   <article id="post-iehaslayout" class="article article-type-post" itemscope itemprop="blogPost">
   <header class="article-header">
     <h1 class="post-title">IE Haslayout</h1>
 
@@ -111,11 +121,9 @@
     </div>
   </header>
 
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我们们那知道浏览器有bug，而且Windows上的lE的bug 似乎比太多数浏览器都多。IE/Win的衣现与其他浏览器不同的原因之一是，显示引擎使用一个称为布局(layout)的内部概念。因为布均是一个专门针对显示引擎内部工作方式的概念，所以一般悄况下不需要了解它。但是，布局问题是许多IE/Win显示bug的根源，所以理解这个概念以及它如何影响CSS是有捂助的。<br><a id="more"></a></p>
+  <div class="article-content">
+    
+      <p>我们们那知道浏览器有bug，而且Windows上的lE的bug 似乎比太多数浏览器都多。IE/Win的衣现与其他浏览器不同的原因之一是，显示引擎使用一个称为布局(layout)的内部概念。因为布均是一个专门针对显示引擎内部工作方式的概念，所以一般悄况下不需要了解它。但是，布局问题是许多IE/Win显示bug的根源，所以理解这个概念以及它如何影响CSS是有捂助的。<br><a id="more"></a></p>
 <p>什么是布局</p>
 <p>Windows 上的IE 使用布局概念来控制元素的尺寸和定位。那些称为拥有布局(have layout)的元素负责本身及其子元素的尺寸和定位。如果一个元旦在没有拥有布局，那么它的尺寸和位置由最近的拥有布局的祖先元素控制。</p>
 <p>IE 显示引擎利用布局概念减少它的处理开销。在理想悄况下，所有元素都控制自己的尺寸和定位。但是，这会在IE中导致很大的性能问题。因此，IE/Win开发团队决定只将布局应用于实际需要它的那些元素，这样就可以充分地减少性能开销。</p>
@@ -204,14 +212,7 @@
 <li>On having layout</li>
 </ul>
 
-      
-    </div>
-
     
-      
-
-    
-
   </div>
 </article>
 
