@@ -52,44 +52,71 @@
   <div class="post-header CENTER">
    
   <div class="toolbox">
-    <a class="toolbox-entry hint hint--left" data-hint="点击返回首页" href="/">盒子</a>
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-home"></i>
+    </a>
     <ul class="list-toolbox">
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/archives/">博客</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/category/">分类</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/tag/">标签</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/link/">友链</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/about/">关于</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/atom.xml">RSS</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
       
     </ul>
   </div>
@@ -97,14 +124,14 @@
 
 </div>
 
- 
+
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、inline-block-前世"><span class="toc-text">一、inline-block 前世</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-认知"><span class="toc-text">1.认知</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-到底什么是-inline-block"><span class="toc-text">2. 到底什么是 inline-block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-inline-block-缘从何起？"><span class="toc-text">3. inline-block 缘从何起？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、inline-block-今生"><span class="toc-text">二、inline-block 今生</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-display-inline-block-后的元素为什么会产生水平空隙，这真的是-bug-吗？"><span class="toc-text">1. display:inline-block 后的元素为什么会产生水平空隙，这真的是 bug 吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-去掉-inline-block-产生的空隙"><span class="toc-text">2.去掉 inline-block 产生的空隙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-去除-inline-block-空隙终极解决方案（2012年8月17日更新）"><span class="toc-text">3. 去除 inline-block 空隙终极解决方案（2012年8月17日更新）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-结局——本文产生的一些观点如下："><span class="toc-text">4. 结局——本文产生的一些观点如下：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、inline-block-未来"><span class="toc-text">三、inline-block 未来</span></a></li></ol>
   </div>
 
 
- <a class="back-top" href="#">
+<a class="back-top" href="#">
   <i class="icon-angle-up"></i>
 </a>
 
@@ -288,34 +315,39 @@
   </div>
 </article>
 
+</div>
 
 
+  
+      <div class="fexo-comments comments-post">
+    
   <section class="disqus-comments">
     <div id="disqus_thread">
       <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
   </section>
 
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://www.forsigner.com/2013/03/28/inline-block/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+
+    
 
 
 
-</div>
 
-  
-<script>
-  var disqus_shortname = 'forsigner';
-  
-  var disqus_url = 'http://www.forsigner.com/2013/03/28/inline-block/';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
+  </div>
 
   
 

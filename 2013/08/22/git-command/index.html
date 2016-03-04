@@ -52,44 +52,71 @@
   <div class="post-header CENTER">
    
   <div class="toolbox">
-    <a class="toolbox-entry hint hint--left" data-hint="点击返回首页" href="/">盒子</a>
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-home"></i>
+    </a>
     <ul class="list-toolbox">
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/archives/">博客</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/category/">分类</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/tag/">标签</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/link/">友链</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/about/">关于</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/atom.xml">RSS</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
       
     </ul>
   </div>
@@ -97,14 +124,14 @@
 
 </div>
 
- 
+
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本命令"><span class="toc-text">基本命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分支操作"><span class="toc-text">分支操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#撒销操作"><span class="toc-text">撒销操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Checkout的使用"><span class="toc-text">Checkout的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rm的使用"><span class="toc-text">rm的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#push的使用"><span class="toc-text">push的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rebase的使用"><span class="toc-text">rebase的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stash的使用"><span class="toc-text">stash的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-config"><span class="toc-text">$ git config</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小贴士"><span class="toc-text">小贴士</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li></ol>
   </div>
 
 
- <a class="back-top" href="#">
+<a class="back-top" href="#">
   <i class="icon-angle-up"></i>
 </a>
 
@@ -164,34 +191,39 @@
   </div>
 </article>
 
+</div>
 
 
+  
+      <div class="fexo-comments comments-post">
+    
   <section class="disqus-comments">
     <div id="disqus_thread">
       <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
   </section>
 
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://www.forsigner.com/2013/08/22/git-command/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+
+    
 
 
 
-</div>
 
-  
-<script>
-  var disqus_shortname = 'forsigner';
-  
-  var disqus_url = 'http://www.forsigner.com/2013/08/22/git-command/';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
+  </div>
 
   
 

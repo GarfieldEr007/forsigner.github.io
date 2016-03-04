@@ -52,44 +52,71 @@
   <div class="post-header CENTER">
    
   <div class="toolbox">
-    <a class="toolbox-entry hint hint--left" data-hint="点击返回首页" href="/">盒子</a>
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-home"></i>
+    </a>
     <ul class="list-toolbox">
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/archives/">博客</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/category/">分类</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/tag/">标签</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/link/">友链</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/about/">关于</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
       
-        
-          <li class="item-toolbox">
-            <a class="CIRCLE" href="/atom.xml">RSS</a>
-          </li>
-        
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
       
     </ul>
   </div>
@@ -97,14 +124,14 @@
 
 </div>
 
- 
+
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML"><span class="toc-text">HTML</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS"><span class="toc-text">CSS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS编写工具"><span class="toc-text">CSS编写工具</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS框架"><span class="toc-text">CSS框架</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS组件"><span class="toc-text">CSS组件</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript"><span class="toc-text">JavaScript</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#框架"><span class="toc-text">框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js工具"><span class="toc-text">js工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Angular"><span class="toc-text">Angular</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JQuery"><span class="toc-text">JQuery</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构建工具"><span class="toc-text">构建工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6"><span class="toc-text">ES6</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Node-js"><span class="toc-text">Node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#express"><span class="toc-text">express</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#koa"><span class="toc-text">koa</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ionic"><span class="toc-text">ionic</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Design"><span class="toc-text">Design</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑器"><span class="toc-text">编辑器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Unix-工具"><span class="toc-text">Unix 工具</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他"><span class="toc-text">其他</span></a></li></ol>
   </div>
 
 
- <a class="back-top" href="#">
+<a class="back-top" href="#">
   <i class="icon-angle-up"></i>
 </a>
 
@@ -374,34 +401,39 @@
   </div>
 </article>
 
+</div>
 
 
+  
+      <div class="fexo-comments comments-post">
+    
   <section class="disqus-comments">
     <div id="disqus_thread">
       <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
   </section>
 
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://www.forsigner.com/2015/01/03/my-tech/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+
+    
 
 
 
-</div>
 
-  
-<script>
-  var disqus_shortname = 'forsigner';
-  
-  var disqus_url = 'http://www.forsigner.com/2015/01/03/my-tech/';
-  
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
+  </div>
 
   
 
