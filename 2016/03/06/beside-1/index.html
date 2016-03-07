@@ -21,7 +21,7 @@
 这个DOM元素位置引擎">
 <meta property="og:image" content="https://raw.githubusercontent.com/forsigner/blog/master/source/images/beside/fo-popover.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/forsigner/blog/master/source/images/beside/beside.png">
-<meta property="og:updated_time" content="2016-03-07T04:33:13.000Z">
+<meta property="og:updated_time" content="2016-03-07T04:57:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="怎样打造一个DOM元素位置引擎 (一)">
 <meta name="twitter:description" content="碎碎念这是一篇早就应该写的文章，但是由于过年前项目紧张，一直没有时间，这个周末决定把这笔债换了。这个项目开始于两个月前，也是花了比较多时间的一个项目，不像前段时间写的 Hexo 主题 fexo ，灵感一现，两个晚上就大体出来了。这也是一个比较有意思的项目，因为它不是一个可以直接用的前端UI组件，它是一个基础UI类库，要更好的使用它，你需要再它基础上去实现一些可用的前端组件。
@@ -54,6 +54,24 @@
 </head>
 
 <body>
+
+  <a href="#modal-one" class="toolbox-mobile">盒子</a>
+
+  <!-- Modal -->
+  <div class="modal" id="modal-one" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>Modal in CSS?</h2>
+        <a href="#close" class="btn-close" aria-hidden="true">×</a>
+        <!--CHANGED TO "#close"-->
+      </div>
+      <div class="modal-body">
+        <p>One modal example here! :D</p>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal -->
+
   <div class="post-header CENTER">
    
   <div class="toolbox">
@@ -178,7 +196,7 @@
 <p>效果图：</p>
 <p><img src="https://raw.githubusercontent.com/forsigner/blog/master/source/images/beside/beside.png" alt="beside"></p>
 <h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>使用 Beside 可以更方便的实现一些前端组件, 典型的包括： Tooltip、Popover、 Dropdown Menu、垂直居中的 Modal 等。</p>
-<h2 id="Beside-的用法"><a href="#Beside-的用法" class="headerlink" title="Beside 的用法"></a>Beside 的用法</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"bower_components/beside/dist/js/beside.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"me"</span>&gt;</span>ME<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"you"</span>&gt;</span>YOU<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Beside-的用法"><a href="#Beside-的用法" class="headerlink" title="Beside 的用法"></a>Beside 的用法</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"bower_components/beside/dist/beside.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"me"</span>&gt;</span>ME<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"you"</span>&gt;</span>YOU<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">beside.init(&#123;</span><br><span class="line">  me: <span class="built_in">document</span>.getElementById(<span class="string">'me'</span>),</span><br><span class="line">  you: <span class="built_in">document</span>.getElementById(<span class="string">'you'</span>),</span><br><span class="line">  where: <span class="string">'top center'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h3 id="基于-Beside-的-UI-component"><a href="#基于-Beside-的-UI-component" class="headerlink" title="基于 Beside 的 UI component"></a>基于 Beside 的 UI component</h3><ul>
 <li><a href="https://github.com/forsigner/fo-popover" target="_blank" rel="external">fo-popover</a> A nice popover for Angular.</li>
