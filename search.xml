@@ -4,6 +4,69 @@
   
     
     <entry>
+      <title><![CDATA[怎样打造一个DOM元素位置引擎 (一)]]></title>
+      <url>http://www.forsigner.com/2016/03/06/beside-1/</url>
+      <content type="html"><![CDATA[<h2 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h2><p>这是一篇早就应该写的文章，但是由于过年前项目紧张，一直没有时间，这个周末决定把这笔债换了。这个项目开始于两个月前，也是花了比较多时间的一个项目，不像前段时间写的 Hexo 主题 <a href="https://github.com/forsigner/fexo" target="_blank" rel="external">fexo</a> ，灵感一现，两个晚上就大体出来了。这也是一个比较有意思的项目，因为它不是一个可以直接用的前端UI组件，它是一个基础UI类库，要更好的使用它，你需要再它基础上去实现一些可用的前端组件。</p>
+<h2 id="这个DOM元素位置引擎是什么？"><a href="#这个DOM元素位置引擎是什么？" class="headerlink" title="这个DOM元素位置引擎是什么？"></a>这个DOM元素位置引擎是什么？</h2><p>说成一个引擎，实在有些装逼，其实它就是控制 DOM 元素位置的一个 JavaScript Library，在前端交互中，怎样给 DOM 元素定位是一个经常遇到的问题，所以我把可以通用的部分抽象出来，这样可以更方便的给元素定位。</p>
+<p>这个类库我给它取名叫做 <strong><a href="https://github.com/forsigner/beside" target="_blank" rel="external">beside</a></strong>，意思是【在旁边】，这也是 <strong><a href="https://github.com/forsigner/beside" target="_blank" rel="external">beside</a></strong> 的核心功能，让一个元素放置于另一个元素旁边。</p>
+<h2 id="Beside起源"><a href="#Beside起源" class="headerlink" title="Beside起源"></a>Beside起源</h2><p>它起源跟艺术一样，源于生活（装逼）。其实他的起源来源于一个删除按钮，需求来源于我们的交互设计师。开始我们前端做了一个删除成员的功能，没有任何提示，就直接删除了。交互说这当然是不行的，要加个二次确认，前端说可以加个弹窗吗？交互说不行，不要这种大弹窗，在删除按钮旁边弹个小卡片就好了，也就是下面的效果:</p>
+<p><img src="https://raw.githubusercontent.com/forsigner/blog/master/source/images/beside/fo-popover.png" alt="fo-popover"></p>
+<p>二次确认这个小功能，它就是 Beside 的起源。</p>
+<h2 id="Beside-到底是什么？"><a href="#Beside-到底是什么？" class="headerlink" title="Beside 到底是什么？"></a>Beside 到底是什么？</h2><p>一句话: <strong><a href="https://github.com/forsigner/beside" target="_blank" rel="external">beside</a></strong> 是一个让一个 DOM 元素放置在另一 DOM 元素的基础 UI 库。</p>
+<p>Gibhub: <strong><a href="https://github.com/forsigner/beside" target="_blank" rel="external">beside</a></strong></p>
+<p>Demo: <a href="http://forsigner.com/beside/" target="_blank" rel="external">查看</a></p>
+<p>效果图：</p>
+<p><img src="https://raw.githubusercontent.com/forsigner/blog/master/source/images/beside/beside.png" alt="beside"></p>
+<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>使用 Beside 可以更方便的实现一些前端组件, 典型的包括： Tooltip、Popover、 Dropdown Menu、垂直居中的 Modal 等。</p>
+<h2 id="Beside-的用法"><a href="#Beside-的用法" class="headerlink" title="Beside 的用法"></a>Beside 的用法</h2><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"bower_components/beside/dist/js/beside.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"me"</span>&gt;</span>ME<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"you"</span>&gt;</span>YOU<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">beside.init(&#123;</span><br><span class="line">  me: <span class="built_in">document</span>.getElementById(<span class="string">'me'</span>),</span><br><span class="line">  you: <span class="built_in">document</span>.getElementById(<span class="string">'you'</span>),</span><br><span class="line">  where: <span class="string">'top center'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="基于-Beside-的-UI-component"><a href="#基于-Beside-的-UI-component" class="headerlink" title="基于 Beside 的 UI component"></a>基于 Beside 的 UI component</h3><ul>
+<li><a href="https://github.com/forsigner/fo-popover" target="_blank" rel="external">fo-popover</a> A nice popover for Angular.</li>
+<li><a href="https://github.com/forsigner/fo-tooltip" target="_blank" rel="external">fo-tooltop</a> A nice tooltip for Angular.</li>
+</ul>
+<h3 id="浏览器兼容性"><a href="#浏览器兼容性" class="headerlink" title="浏览器兼容性"></a>浏览器兼容性</h3><ul>
+<li>IE7 &amp;&amp; IE7+</li>
+<li>Firefox</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Opera</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在浏览器端获取文件的MD5值]]></title>
+      <url>http://www.forsigner.com/2016/03/04/browser-md5-file/</url>
+      <content type="html"><![CDATA[<p>前几天接到一个奇怪的需求，要在web页面中计算文件的md5值，还好这个项目是只需兼容现代浏览器的，不然要坑死了。</p>
+<p>其实对文件进行md5，对于后端来说是及其简单的。比如使用Node.js，只要下面几行代码就可以了：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> fs= <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">var</span> crypto = <span class="built_in">require</span>(<span class="string">'crypto'</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">md5File</span>(<span class="params">path, callback</span>) </span>&#123;</span><br><span class="line">  fs.readFile(path, <span class="function"><span class="keyword">function</span>(<span class="params">err, data</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">var</span> md5Value= crypto.createHash(<span class="string">'md5'</span>).update(data, <span class="string">'utf8'</span>).digest(<span class="string">'hex'</span>);</span><br><span class="line">    callback(md5Value)；</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>但是对于浏览器，如果不能使用HTML5的file api，对文件md5是几乎不可能的事。如果可以不使用file api，还请哪位大牛給分享一下。</p>
+<p>要在浏览器中对文件进行md5，基本思路就是使用HTML5的FileReader接口把文件读取到内存，然后获取文件的二进制内容，最后再进行md5。</p>
+<p>Github中已经有人最这个问题进行研究，其中比较优秀的一个项目就是：<a href="https://github.com/satazor/js-spark-md5" target="_blank" rel="external">js-spark-md5</a>，该项目使用了世界上最快的md5算法。</p>
+<p>为了更好的重用代码，我在js-spark-md5的基础上封装了<a href="https://github.com/forsigner/browser-md5-file" target="_blank" rel="external">browser-md5-file</a>，可以更方便的使用md5 file。</p>
+<ul>
+<li><p>项目地址：<strong><a href="https://github.com/forsigner/browser-md5-file" target="_blank" rel="external">browser-md5-file</a></strong></p>
+</li>
+<li><p>Demo： <a href="http://forsigner.com/browser-md5-file" target="_blank" rel="external">查看</a></p>
+</li>
+</ul>
+<p>使用方法非常简单：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"bower_components/browser-md5-file/dist/browser-md5-file.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> el = <span class="built_in">document</span>.getElementById(<span class="string">'upload'</span>);</span><br><span class="line">el.addEventListener(<span class="string">'change'</span>, handle, <span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">handle</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> file = e.target.files[<span class="number">0</span>];</span><br><span class="line">  browserMD5File(file, <span class="function"><span class="keyword">function</span> (<span class="params">err, md5</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(md5); <span class="comment">// 97027eb624f85892c69c4bcec8ab0f11</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>详细的使用方法可以查看Github中的文档。</p>
+<p>关于浏览器兼容性，由于使用的HTML5 api，所以只能兼容到一下浏览器：</p>
+<ul>
+<li>IE10+</li>
+<li>Firefox</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Opera</li>
+</ul>
+<p>还有一点，由于需要把文件读取到内存，md5大文件会性能较差。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[一个极简主义设计的 Hexo 主题]]></title>
       <url>http://www.forsigner.com/2016/02/23/fexo/</url>
       <content type="html"><![CDATA[<p>作为设计师出身的前端攻城狮， blog 用着别人的主题终究还是不爽，于是花了两天晚上写了一个 Hexo 主题。</p>

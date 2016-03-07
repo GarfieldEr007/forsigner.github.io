@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.forsigner.com/"/>
-  <updated>2016-02-25T01:08:14.000Z</updated>
+  <updated>2016-03-07T04:33:11.000Z</updated>
   <id>http://www.forsigner.com/</id>
   
   <author>
@@ -14,6 +14,103 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>怎样打造一个DOM元素位置引擎 (一)</title>
+    <link href="http://www.forsigner.com/2016/03/06/beside-1/"/>
+    <id>http://www.forsigner.com/2016/03/06/beside-1/</id>
+    <published>2016-03-05T16:00:00.000Z</published>
+    <updated>2016-03-07T04:33:11.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;碎碎念&quot;&gt;&lt;a href=&quot;#碎碎念&quot; class=&quot;headerlink&quot; title=&quot;碎碎念&quot;&gt;&lt;/a&gt;碎碎念&lt;/h2&gt;&lt;p&gt;这是一篇早就应该写的文章，但是由于过年前项目紧张，一直没有时间，这个周末决定把这笔债换了。这个项目开始于两个月前，也是花了比较多时间的一个项目，不像前段时间写的 Hexo 主题 &lt;a href=&quot;https://github.com/forsigner/fexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;fexo&lt;/a&gt; ，灵感一现，两个晚上就大体出来了。这也是一个比较有意思的项目，因为它不是一个可以直接用的前端UI组件，它是一个基础UI类库，要更好的使用它，你需要再它基础上去实现一些可用的前端组件。&lt;/p&gt;
+&lt;h2 id=&quot;这个DOM元素位置引擎是什么？&quot;&gt;&lt;a href=&quot;#这个DOM元素位置引擎是什么？&quot; class=&quot;headerlink&quot; title=&quot;这个DOM元素位置引擎是什么？&quot;&gt;&lt;/a&gt;这个DOM元素位置引擎是什么？&lt;/h2&gt;&lt;p&gt;说成一个引擎，实在有些装逼，其实它就是控制 DOM 元素位置的一个 JavaScript Library，在前端交互中，怎样给 DOM 元素定位是一个经常遇到的问题，所以我把可以通用的部分抽象出来，这样可以更方便的给元素定位。&lt;/p&gt;
+&lt;p&gt;这个类库我给它取名叫做 &lt;strong&gt;&lt;a href=&quot;https://github.com/forsigner/beside&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;beside&lt;/a&gt;&lt;/strong&gt;，意思是【在旁边】，这也是 &lt;strong&gt;&lt;a href=&quot;https://github.com/forsigner/beside&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;beside&lt;/a&gt;&lt;/strong&gt; 的核心功能，让一个元素放置于另一个元素旁边。&lt;/p&gt;
+&lt;h2 id=&quot;Beside起源&quot;&gt;&lt;a href=&quot;#Beside起源&quot; class=&quot;headerlink&quot; title=&quot;Beside起源&quot;&gt;&lt;/a&gt;Beside起源&lt;/h2&gt;&lt;p&gt;它起源跟艺术一样，源于生活（装逼）。其实他的起源来源于一个删除按钮，需求来源于我们的交互设计师。开始我们前端做了一个删除成员的功能，没有任何提示，就直接删除了。交互说这当然是不行的，要加个二次确认，前端说可以加个弹窗吗？交互说不行，不要这种大弹窗，在删除按钮旁边弹个小卡片就好了，也就是下面的效果:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/forsigner/blog/master/source/images/beside/fo-popover.png&quot; alt=&quot;fo-popover&quot;&gt;&lt;/p&gt;
+&lt;p&gt;二次确认这个小功能，它就是 Beside 的起源。&lt;/p&gt;
+&lt;h2 id=&quot;Beside-到底是什么？&quot;&gt;&lt;a href=&quot;#Beside-到底是什么？&quot; class=&quot;headerlink&quot; title=&quot;Beside 到底是什么？&quot;&gt;&lt;/a&gt;Beside 到底是什么？&lt;/h2&gt;&lt;p&gt;一句话: &lt;strong&gt;&lt;a href=&quot;https://github.com/forsigner/beside&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;beside&lt;/a&gt;&lt;/strong&gt; 是一个让一个 DOM 元素放置在另一 DOM 元素的基础 UI 库。&lt;/p&gt;
+&lt;p&gt;Gibhub: &lt;strong&gt;&lt;a href=&quot;https://github.com/forsigner/beside&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;beside&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Demo: &lt;a href=&quot;http://forsigner.com/beside/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;查看&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;效果图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/forsigner/blog/master/source/images/beside/beside.png&quot; alt=&quot;beside&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;使用场景&quot;&gt;&lt;a href=&quot;#使用场景&quot; class=&quot;headerlink&quot; title=&quot;使用场景&quot;&gt;&lt;/a&gt;使用场景&lt;/h2&gt;&lt;p&gt;使用 Beside 可以更方便的实现一些前端组件, 典型的包括： Tooltip、Popover、 Dropdown Menu、垂直居中的 Modal 等。&lt;/p&gt;
+&lt;h2 id=&quot;Beside-的用法&quot;&gt;&lt;a href=&quot;#Beside-的用法&quot; class=&quot;headerlink&quot; title=&quot;Beside 的用法&quot;&gt;&lt;/a&gt;Beside 的用法&lt;/h2&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;bower_components/beside/dist/js/beside.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;me&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;ME&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;you&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;YOU&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;beside.init(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  me: &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&#39;me&#39;&lt;/span&gt;),&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  you: &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&#39;you&#39;&lt;/span&gt;),&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  where: &lt;span class=&quot;string&quot;&gt;&#39;top center&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;基于-Beside-的-UI-component&quot;&gt;&lt;a href=&quot;#基于-Beside-的-UI-component&quot; class=&quot;headerlink&quot; title=&quot;基于 Beside 的 UI component&quot;&gt;&lt;/a&gt;基于 Beside 的 UI component&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/forsigner/fo-popover&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;fo-popover&lt;/a&gt; A nice popover for Angular.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/forsigner/fo-tooltip&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;fo-tooltop&lt;/a&gt; A nice tooltip for Angular.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;浏览器兼容性&quot;&gt;&lt;a href=&quot;#浏览器兼容性&quot; class=&quot;headerlink&quot; title=&quot;浏览器兼容性&quot;&gt;&lt;/a&gt;浏览器兼容性&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;IE7 &amp;amp;&amp;amp; IE7+&lt;/li&gt;
+&lt;li&gt;Firefox&lt;/li&gt;
+&lt;li&gt;Chrome&lt;/li&gt;
+&lt;li&gt;Safari&lt;/li&gt;
+&lt;li&gt;Opera&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;碎碎念&quot;&gt;&lt;a href=&quot;#碎碎念&quot; class=&quot;headerlink&quot; title=&quot;碎碎念&quot;&gt;&lt;/a&gt;碎碎念&lt;/h2&gt;&lt;p&gt;这是一篇早就应该写的文章，但是由于过年前项目紧张，一直没有时间，这个周末决定把这笔债换了。这个项目开始于两个月前，也是花了比较多时间
+    
+    </summary>
+    
+      <category term="前端" scheme="http://www.forsigner.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JavaScript" scheme="http://www.forsigner.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在浏览器端获取文件的MD5值</title>
+    <link href="http://www.forsigner.com/2016/03/04/browser-md5-file/"/>
+    <id>http://www.forsigner.com/2016/03/04/browser-md5-file/</id>
+    <published>2016-03-03T16:00:00.000Z</published>
+    <updated>2016-03-07T04:33:05.000Z</updated>
+    
+    <content type="html">&lt;p&gt;前几天接到一个奇怪的需求，要在web页面中计算文件的md5值，还好这个项目是只需兼容现代浏览器的，不然要坑死了。&lt;/p&gt;
+&lt;p&gt;其实对文件进行md5，对于后端来说是及其简单的。比如使用Node.js，只要下面几行代码就可以了：&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; fs= &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;fs&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; crypto = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;crypto&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;md5File&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;path, callback&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  fs.readFile(path, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;err, data&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (err) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; md5Value= crypto.createHash(&lt;span class=&quot;string&quot;&gt;&#39;md5&#39;&lt;/span&gt;).update(data, &lt;span class=&quot;string&quot;&gt;&#39;utf8&#39;&lt;/span&gt;).digest(&lt;span class=&quot;string&quot;&gt;&#39;hex&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    callback(md5Value)；&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;但是对于浏览器，如果不能使用HTML5的file api，对文件md5是几乎不可能的事。如果可以不使用file api，还请哪位大牛給分享一下。&lt;/p&gt;
+&lt;p&gt;要在浏览器中对文件进行md5，基本思路就是使用HTML5的FileReader接口把文件读取到内存，然后获取文件的二进制内容，最后再进行md5。&lt;/p&gt;
+&lt;p&gt;Github中已经有人最这个问题进行研究，其中比较优秀的一个项目就是：&lt;a href=&quot;https://github.com/satazor/js-spark-md5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;js-spark-md5&lt;/a&gt;，该项目使用了世界上最快的md5算法。&lt;/p&gt;
+&lt;p&gt;为了更好的重用代码，我在js-spark-md5的基础上封装了&lt;a href=&quot;https://github.com/forsigner/browser-md5-file&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;browser-md5-file&lt;/a&gt;，可以更方便的使用md5 file。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;项目地址：&lt;strong&gt;&lt;a href=&quot;https://github.com/forsigner/browser-md5-file&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;browser-md5-file&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Demo： &lt;a href=&quot;http://forsigner.com/browser-md5-file&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;查看&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用方法非常简单：&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;value&quot;&gt;&quot;bower_components/browser-md5-file/dist/browser-md5-file.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; el = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&#39;upload&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;el.addEventListener(&lt;span class=&quot;string&quot;&gt;&#39;change&#39;&lt;/span&gt;, handle, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;handle&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;e&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; file = e.target.files[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  browserMD5File(file, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;err, md5&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(md5); &lt;span class=&quot;comment&quot;&gt;// 97027eb624f85892c69c4bcec8ab0f11&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;详细的使用方法可以查看Github中的文档。&lt;/p&gt;
+&lt;p&gt;关于浏览器兼容性，由于使用的HTML5 api，所以只能兼容到一下浏览器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IE10+&lt;/li&gt;
+&lt;li&gt;Firefox&lt;/li&gt;
+&lt;li&gt;Chrome&lt;/li&gt;
+&lt;li&gt;Safari&lt;/li&gt;
+&lt;li&gt;Opera&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;还有一点，由于需要把文件读取到内存，md5大文件会性能较差。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前几天接到一个奇怪的需求，要在web页面中计算文件的md5值，还好这个项目是只需兼容现代浏览器的，不然要坑死了。&lt;/p&gt;
+&lt;p&gt;其实对文件进行md5，对于后端来说是及其简单的。比如使用Node.js，只要下面几行代码就可以了：&lt;/p&gt;
+&lt;figure class=&quot;high
+    
+    </summary>
+    
+      <category term="前端" scheme="http://www.forsigner.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JavaScript" scheme="http://www.forsigner.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>一个极简主义设计的 Hexo 主题</title>
