@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.forsigner.com/"/>
-  <updated>2016-03-07T04:33:11.000Z</updated>
+  <updated>2016-03-07T04:33:13.000Z</updated>
   <id>http://www.forsigner.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.forsigner.com/2016/03/06/beside-1/"/>
     <id>http://www.forsigner.com/2016/03/06/beside-1/</id>
     <published>2016-03-05T16:00:00.000Z</published>
-    <updated>2016-03-07T04:33:11.000Z</updated>
+    <updated>2016-03-07T04:33:13.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;碎碎念&quot;&gt;&lt;a href=&quot;#碎碎念&quot; class=&quot;headerlink&quot; title=&quot;碎碎念&quot;&gt;&lt;/a&gt;碎碎念&lt;/h2&gt;&lt;p&gt;这是一篇早就应该写的文章，但是由于过年前项目紧张，一直没有时间，这个周末决定把这笔债换了。这个项目开始于两个月前，也是花了比较多时间的一个项目，不像前段时间写的 Hexo 主题 &lt;a href=&quot;https://github.com/forsigner/fexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;fexo&lt;/a&gt; ，灵感一现，两个晚上就大体出来了。这也是一个比较有意思的项目，因为它不是一个可以直接用的前端UI组件，它是一个基础UI类库，要更好的使用它，你需要再它基础上去实现一些可用的前端组件。&lt;/p&gt;
 &lt;h2 id=&quot;这个DOM元素位置引擎是什么？&quot;&gt;&lt;a href=&quot;#这个DOM元素位置引擎是什么？&quot; class=&quot;headerlink&quot; title=&quot;这个DOM元素位置引擎是什么？&quot;&gt;&lt;/a&gt;这个DOM元素位置引擎是什么？&lt;/h2&gt;&lt;p&gt;说成一个引擎，实在有些装逼，其实它就是控制 DOM 元素位置的一个 JavaScript Library，在前端交互中，怎样给 DOM 元素定位是一个经常遇到的问题，所以我把可以通用的部分抽象出来，这样可以更方便的给元素定位。&lt;/p&gt;
