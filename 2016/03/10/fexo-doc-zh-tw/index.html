@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Fexo 文檔 | forsigner的博客</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Hexo,JavaScript," />
+  
+
+  <meta name="description" content="安裝$ cd my-blog$ git clone git@github.com:forsigner/fexo.git themes/fexo
+啟用打開博客根目錄的 _config.yml 設為 theme: fexo
+升級$ cd themes/fexo$ git pull
+配置主題主題配置全部在theme/fexo裏面完成，所裏下面所有配置指的是配置theme/fexo/_config.yml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fexo 文檔">
+<meta property="og:url" content="http://www.forsigner.com/2016/03/10/fexo-doc-zh-tw/index.html">
+<meta property="og:site_name" content="forsigner的博客">
+<meta property="og:description" content="安裝$ cd my-blog$ git clone git@github.com:forsigner/fexo.git themes/fexo
+啟用打開博客根目錄的 _config.yml 設為 theme: fexo
+升級$ cd themes/fexo$ git pull
+配置主題主題配置全部在theme/fexo裏面完成，所裏下面所有配置指的是配置theme/fexo/_config.yml">
+<meta property="og:updated_time" content="2016-03-10T12:25:09.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Fexo 文檔">
+<meta name="twitter:description" content="安裝$ cd my-blog$ git clone git@github.com:forsigner/fexo.git themes/fexo
+啟用打開博客根目錄的 _config.yml 設為 theme: fexo
+升級$ cd themes/fexo$ git pull
+配置主題主題配置全部在theme/fexo裏面完成，所裏下面所有配置指的是配置theme/fexo/_config.yml">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+
+  <link href="/css/styles.css?v=16ddc105" rel="stylesheet">
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+
+  
+    <a href="#modal-one" class="toolbox-mobile">盒子</a>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a 
+            class="CIRCLE" 
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安裝"><span class="toc-text">安裝</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#啟用"><span class="toc-text">啟用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#升級"><span class="toc-text">升級</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置主題"><span class="toc-text">配置主題</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#設置基本信息"><span class="toc-text">設置基本信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置頭像"><span class="toc-text">設置頭像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置favicon"><span class="toc-text">設置favicon</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置關鍵詞"><span class="toc-text">設置關鍵詞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置首頁內容"><span class="toc-text">設置首頁內容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置首頁導航"><span class="toc-text">設置首頁導航</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置頁面導航"><span class="toc-text">設置頁面導航</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置頁面導航樣式"><span class="toc-text">設置頁面導航樣式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置面包屑"><span class="toc-text">設置面包屑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置盒子"><span class="toc-text">設置盒子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#設置文章標題對齊方式"><span class="toc-text">設置文章標題對齊方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啟用分類頁面"><span class="toc-text">啟用分類頁面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啟用標簽頁面"><span class="toc-text">啟用標簽頁面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啟用友鏈頁面"><span class="toc-text">啟用友鏈頁面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啟用關於頁面"><span class="toc-text">啟用關於頁面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啟用統計"><span class="toc-text">啟用統計</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啟用評論"><span class="toc-text">啟用評論</span></a></li></ol></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-fexo-doc-zh-tw" class="article article-type-post" itemscope itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Fexo 文檔</h1>
+
+    <div class="article-meta">
+      <span>2016-03-10</span>
+
+      <span> | </span>
+
+      <span class="article-author">forsigner</span>
+
+      <span> | </span>
+
+      
+  <span class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+  </span>
+
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h1 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> my-blog</span><br><span class="line">$ git <span class="built_in">clone</span> git@github.com:forsigner/fexo.git themes/fexo</span><br></pre></td></tr></table></figure>
+<h1 id="啟用"><a href="#啟用" class="headerlink" title="啟用"></a>啟用</h1><p>打開博客根目錄的 <code>_config.yml</code> 設為 <code>theme: fexo</code></p>
+<h1 id="升級"><a href="#升級" class="headerlink" title="升級"></a>升級</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/fexo</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+<h1 id="配置主題"><a href="#配置主題" class="headerlink" title="配置主題"></a>配置主題</h1><p>主題配置全部在<code>theme/fexo</code>裏面完成，所裏下面所有配置指的是配置<code>theme/fexo/_config.yml</code>。</p>
+<h2 id="設置基本信息"><a href="#設置基本信息" class="headerlink" title="設置基本信息"></a>設置基本信息</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">blog_name: Forsigner&#10;slogan: Find the bug of the world</span><br></pre></td></tr></table></figure>
+<h2 id="設置頭像"><a href="#設置頭像" class="headerlink" title="設置頭像"></a>設置頭像</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line"># relative url&#10;avatar: /images/avatar.jpg&#10;# or absolute url&#10;avatar: https://avatars0.githubusercontent.com/u/2668081?v=3&#38;s=460</span><br></pre></td></tr></table></figure>
+<h2 id="設置favicon"><a href="#設置favicon" class="headerlink" title="設置favicon"></a>設置favicon</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">favicon: /favicon.ico</span><br></pre></td></tr></table></figure>
+<h2 id="設置關鍵詞"><a href="#設置關鍵詞" class="headerlink" title="設置關鍵詞"></a>設置關鍵詞</h2><p>關鍵詞主要作用是優化SEO</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">keywords: forsigner,&#21069;&#31471;,&#35373;&#35336;,Hexo&#20027;&#38988;,&#21069;&#31471;&#38283;&#30332;,&#29992;&#25142;&#39636;&#39511;,&#35373;&#35336;,frontend,design,nodejs,JavaScript</span><br></pre></td></tr></table></figure>
+<h2 id="設置首頁內容"><a href="#設置首頁內容" class="headerlink" title="設置首頁內容"></a>設置首頁內容</h2><p>妳可以設置是否在首頁直接顯示文章</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">init_page_content: HOME_NAV  # HOME_NAV | POST</span><br></pre></td></tr></table></figure>
+<h2 id="設置首頁導航"><a href="#設置首頁導航" class="headerlink" title="設置首頁導航"></a>設置首頁導航</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">home_nav:&#10;  - name: Blog&#10;    url: /archives&#10;  - name: Github&#10;    url: https://github.com/forsigner&#10;    target: _blank&#10;  - name: Douban&#10;    url: http://www.douban.com/people/forsigner/&#10;    target: _blank&#10;  - name: Twitter&#10;    url: https://twitter.com/forsigner&#10;    target: _blank</span><br></pre></td></tr></table></figure>
+<h2 id="設置頁面導航"><a href="#設置頁面導航" class="headerlink" title="設置頁面導航"></a>設置頁面導航</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">page_nav:&#10;  - &#21338;&#23458;: /archives/&#10;  - &#20998;&#39006;: /category/&#10;  - &#27161;&#31805;: /tag/&#10;  - &#21451;&#37832;: /link/&#10;  - &#38364;&#26044;: /about/&#10;  - RSS: /atom.xml</span><br></pre></td></tr></table></figure>
+<h2 id="設置頁面導航樣式"><a href="#設置頁面導航樣式" class="headerlink" title="設置頁面導航樣式"></a>設置頁面導航樣式</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT</span><br></pre></td></tr></table></figure>
+<h2 id="設置面包屑"><a href="#設置面包屑" class="headerlink" title="設置面包屑"></a>設置面包屑</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">breadcrumb:&#10;  isShow: true # true|fase</span><br></pre></td></tr></table></figure>
+<h2 id="設置盒子"><a href="#設置盒子" class="headerlink" title="設置盒子"></a>設置盒子</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">toolbox:&#10;  isShow: true # true|fase</span><br></pre></td></tr></table></figure>
+<h2 id="設置文章標題對齊方式"><a href="#設置文章標題對齊方式" class="headerlink" title="設置文章標題對齊方式"></a>設置文章標題對齊方式</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">post:&#10;  header_align: center # left|center</span><br></pre></td></tr></table></figure>
+<h2 id="啟用分類頁面"><a href="#啟用分類頁面" class="headerlink" title="啟用分類頁面"></a>啟用分類頁面</h2><ol>
+<li>在博客根目錄執行 <code>hexo new page category</code></li>
+<li>修改<code>my-blog/source/category/index.md</code>裏面的內容:</li>
+</ol>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">---&#10;title: category&#10;layout: category&#10;comments: false&#10;---</span><br></pre></td></tr></table></figure>
+<h2 id="啟用標簽頁面"><a href="#啟用標簽頁面" class="headerlink" title="啟用標簽頁面"></a>啟用標簽頁面</h2><ol>
+<li>在博客根目錄執行 <code>hexo new page tag</code></li>
+<li>修改<code>my-blog/source/tag/index.md</code>裏面的內容:</li>
+</ol>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">---&#10;title: tag&#10;layout: tag&#10;comments: false&#10;---</span><br></pre></td></tr></table></figure>
+<h2 id="啟用友鏈頁面"><a href="#啟用友鏈頁面" class="headerlink" title="啟用友鏈頁面"></a>啟用友鏈頁面</h2><ol>
+<li>在博客根目錄執行 <code>hexo new page link</code></li>
+<li>修改<code>my-blog/source/link/index.md</code>裏面的內容:</li>
+</ol>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">---&#10;title: link&#10;layout: link&#10;comments: false&#10;---</span><br></pre></td></tr></table></figure>
+<h2 id="啟用關於頁面"><a href="#啟用關於頁面" class="headerlink" title="啟用關於頁面"></a>啟用關於頁面</h2><ol>
+<li>在博客根目錄執行 <code>hexo new page about</code></li>
+<li>修改<code>my-blog/source/about/index.md</code>裏面的內容:</li>
+</ol>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">---&#10;title: about&#10;layout: about&#10;comments: false&#10;---</span><br></pre></td></tr></table></figure>
+<h2 id="啟用統計"><a href="#啟用統計" class="headerlink" title="啟用統計"></a>啟用統計</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">google_analytics:&#10;baidu_analytics: 57e94d016sfsf1fba3xxxx8a2b0263af0</span><br></pre></td></tr></table></figure>
+<h2 id="啟用評論"><a href="#啟用評論" class="headerlink" title="啟用評論"></a>啟用評論</h2><figure class="highlight"><table><tr><td class="code"><pre><span class="line">disqus_shortname: forsigner&#10;# duoshuo_shortname: forsigner</span><br></pre></td></tr></table></figure>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal-one" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">关闭</a>
+    </div>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://www.forsigner.com/2016/03/10/fexo-doc-zh-tw/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+
+    
+
+
+
+
+  </div>
+
+  
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

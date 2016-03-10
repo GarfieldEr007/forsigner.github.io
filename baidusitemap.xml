@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://www.forsigner.com/2016/03/10/fexo-doc-zh-tw/</loc>
+    <lastmod>2016-03-10T12:25:09.000Z</lastmod>
+    <data>
+        <display>
+        <title>Fexo 文檔</title>
+        <pubTime>2016-03-09T16:00:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.forsigner.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.forsigner.com/2016/03/10/fexo-doc-en/</loc>
+    <lastmod>2016-03-10T12:22:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>Fexo Doc</title>
+        <pubTime>2016-03-09T16:00:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.forsigner.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.forsigner.com/2016/03/10/fexo-doc-zh-cn/</loc>
     <lastmod>2016-03-10T12:15:47.000Z</lastmod>
     <data>
@@ -106,27 +150,6 @@
     </url>
 
     
-  <url>
-    <loc>http://www.forsigner.com/2012/12/29/use-vim-project/</loc>
-    <lastmod>2016-02-29T01:23:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>vim插件project的用法</title>
-        <pubTime>2012-12-28T16:00:00.000Z</pubTime>
-        
-        <tag>前端工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="http://www.forsigner.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
     
   <url>
     <loc>http://www.forsigner.com/2013/03/20/css-bfc/</loc>
@@ -189,6 +212,27 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://www.forsigner.com/2012/12/29/use-vim-project/</loc>
+    <lastmod>2016-02-29T01:23:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>vim插件project的用法</title>
+        <pubTime>2012-12-28T16:00:00.000Z</pubTime>
+        
+        <tag>前端工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://www.forsigner.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.forsigner.com/2013/08/22/git-command/</loc>
