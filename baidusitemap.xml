@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://www.forsigner.com/2016/03/10/fexo-doc-zh-cn/</loc>
+    <lastmod>2016-03-10T10:53:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>Fexo 文档</title>
+        <pubTime>2016-03-09T16:00:00.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.forsigner.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.forsigner.com/2016/03/06/beside-1/</loc>
     <lastmod>2016-03-07T04:57:06.000Z</lastmod>
     <data>
@@ -85,26 +107,6 @@
 
     
   <url>
-    <loc>http://www.forsigner.com/2013/02/23/ordinary-world/</loc>
-    <lastmod>2016-02-29T01:23:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>《平凡的世界》：不平凡的人生</title>
-        <pubTime>2013-02-22T16:00:00.000Z</pubTime>
-        
-        <tag>读书</tag>
-         
-         
-           
-             
-              <breadCrumb title="读书" url="http://www.forsigner.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.forsigner.com/2012/12/29/use-vim-project/</loc>
     <lastmod>2016-02-29T01:23:15.000Z</lastmod>
     <data>
@@ -147,26 +149,6 @@
 
     
   <url>
-    <loc>http://www.forsigner.com/2013/08/22/git-command/</loc>
-    <lastmod>2016-02-29T01:23:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>常用git命令</title>
-        <pubTime>2013-08-21T16:00:00.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具" url="http://www.forsigner.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.forsigner.com/2013/12/06/sass-sourcemap/</loc>
     <lastmod>2016-02-29T01:23:15.000Z</lastmod>
     <data>
@@ -182,6 +164,46 @@
            
              
               <breadCrumb title="前端" url="http://www.forsigner.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.forsigner.com/2013/02/23/ordinary-world/</loc>
+    <lastmod>2016-02-29T01:23:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>《平凡的世界》：不平凡的人生</title>
+        <pubTime>2013-02-22T16:00:00.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书" url="http://www.forsigner.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.forsigner.com/2013/08/22/git-command/</loc>
+    <lastmod>2016-02-29T01:23:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>常用git命令</title>
+        <pubTime>2013-08-21T16:00:00.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://www.forsigner.com/categories/%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
